@@ -21,3 +21,15 @@
 ```
 <p>Click here for <a href="#">cat photos</a>.</p>//#为超链接网页，必须用<a></a>
 ```
+## style中class优先级
+```
+.pink-text {
+    color: pink;
+  }
+  .blue-text{
+    color:blue;
+  }
+</style>
+<h1 class="pink-text blue-text">Hello World!</h1>
+```
+Hello World!是蓝色的，因为在```<style> ```部分中 class 声明的顺序却非常重要，第二个声明总是比第一个具有优先权。因为``` .blue-text ```是第二个声明，它覆盖了```.pink-text``` 属性。
