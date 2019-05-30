@@ -32,4 +32,21 @@
 </style>
 <h1 class="pink-text blue-text">Hello World!</h1>
 ```
-Hello World!是蓝色的，因为在```<style> ```部分中 class 声明的顺序却非常重要，第二个声明总是比第一个具有优先权。因为``` .blue-text ```是第二个声明，它覆盖了```.pink-text``` 属性。
+**Hello World!是蓝色的,**因为在```<style> ```部分中 class 声明的顺序却非常重要，第二个声明总是比第一个具有优先权。因为``` .blue-text ```是第二个声明，它覆盖了```.pink-text``` 属性。
+## important>内联style>id>class
+无论在 style 元素 CSS 的哪个位置进行声明，id 声明都会覆盖 class 声明。
+而内联样式则会覆盖id声明和class声明。
+```
+.pink-text {
+    color: pink;
+  }
+<h1 style="color:white" id="orange-text" class="pink-text blue-text">Hello World!</h1>
+```
+**Hello World!为白色**
+```
+.pink-text {
+    color: pink !important;
+  }
+<h1 style="color:white" id="orange-text" class="pink-text blue-text">Hello World!</h1>
+```
+**Hello World!为粉色**
