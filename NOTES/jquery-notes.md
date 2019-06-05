@@ -171,9 +171,9 @@ langs.filter(function () {
     return this.innerHTML.indexOf('S') === 0; // 返回S开头的节点
 }); // 拿到Swift, Scheme
 ```
-**关于indexOf**
-indexOf() 方法可返回某个指定的字符串值在字符串中首次出现的位置。
-注释：indexOf() 方法对大小写敏感！
+**关于indexOf**  
+indexOf() 方法可返回某个指定的字符串值在字符串中首次出现的位置。  
+注释：indexOf() 方法对大小写敏感！  
 注释：如果要检索的字符串值没有出现，则该方法返回 -1。
 ```
 <script type="text/javascript">
